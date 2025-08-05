@@ -11,17 +11,17 @@ This project is a simple fruit image classifier built with TensorFlow/Keras and 
 
 ## 📦 Project Structure
 fruit_classifier/
-├── dataset/ # Folder with training images
+├── dataset/
+│   ├── Training/
+│   └── Test/
 ├── model/
-│ └── fruit_model.h5 # Trained model file
-├── static/
-│ └── uploads/ # Uploaded images for prediction
-├── templates/
-│ └── index.html # Frontend for upload and result display
-├── app.py # Main Flask app
-├── train_model.py # Script to train CNN model
-├── requirements.txt # Required Python libraries
-└── README.md # Project documentation
+│   └── fruit_model.h5
+├── test_image/
+│   └── your_uploaded_image.jpg  ← Put your image here
+├── main.py                      ← Model training code
+├── predict.py                   ← Custom image prediction
+└── requirements.txt
+
 
 
 ## 🛠️ Setup Instructions
